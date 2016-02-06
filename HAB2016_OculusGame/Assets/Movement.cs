@@ -15,11 +15,11 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.UpArrow)) {
-			bikedir = Vector3.up;
+			bikedir = Vector3.;
 		}
-		if(Input.GetKey(KeyCode.DownArrow)){
-			bikedir = Vector3.down;
-		}
+		//if(Input.GetKey(KeyCode.DownArrow)){
+		//	bikedir = Vector3.down;
+		//}
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			bikedir = new Vector3(0,0,-1);
 		}
