@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     private int[] m_lastPos;
     int direction;
     double turnDelay;
+    private Vector3 moveDirection = Vector3.zero;
     // Use this for initialization
 
     void Start()
@@ -28,6 +29,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
 
+        CharacterController controller = GetComponent<CharacterController>();
         turnButton2();
         //transform.Translate(bikedir * moveSpeed * Time.deltaTime);
         transform.Translate(new Vector3(-1, 0, 0) * moveSpeed * Time.deltaTime);
@@ -108,7 +110,7 @@ public class Movement : MonoBehaviour
         //Debug.Log("Ready to turn");
 
         //Quaternion target = Quaternion.identity;
-
+        /*
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(new Vector3(0, 0, -90));
@@ -121,33 +123,40 @@ public class Movement : MonoBehaviour
             transform.Rotate(new Vector3(0, 0, 90));
             //Debug.Log("rot right");
             turnDelay = DELAY_TIME;
+        }*/
+        float z = Input.GetAxisRaw("Horizontal");
+        float x = Input.GetAxisRaw("Vertical");
+        if (z > .2)
+        {
+            direction += 90;
+            direction %= 360;
+
+            bikedir = new Vector3((float)Math.Cos(direction * Math.PI / 180), 0, (float)Math.Sin(direction * Math.PI / 180));
+            transform.Rotate(new Vector3(0, 0, 90));
         }
+        if (z < -.2)
+        {
+            direction -= 90;
+            direction %= 360;
+
+            bikedir = new Vector3((float)Math.Cos(direction * Math.PI / 180), 0, (float)Math.Sin(direction * Math.PI / 180));
+            transform.Rotate(new Vector3(0, 0, -90));
+        }
+        moveDirection = new Vector3(0, 0, z);
+        Debug.Log("a x: " + x + " z: " + z);
+        turnDelay = DELAY_TIME;
 
     }
 
     void turnButton()
     {
         turnDelay -= Time.deltaTime;
-
         if (turnDelay > 0)
+
         {
             return;
         }
-
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            direction += 90;
-            direction %= 360;
-            bikedir = new Vector3((float)Math.Cos(direction * Math.PI / 180), 0, (float)Math.Sin(direction * Math.PI / 180));
-            //transform.Rotate(new Vector3(0, 0, 90));
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            direction -= 90;
-            direction %= 360;
-            bikedir = new Vector3((float)Math.Cos(direction * Math.PI / 180), 0, (float)Math.Sin(direction * Math.PI / 180));
-            //transform.Rotate(new Vector3(0, 0, 90));
-        }
+       
         turnDelay = DELAY_TIME;
     }
 }
