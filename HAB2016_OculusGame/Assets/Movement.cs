@@ -65,8 +65,10 @@ public class Movement : MonoBehaviour
         // TODO: uncomment me! :D
         //gameObject.SetActive(false);
         Instantiate(explosion, transform.position, transform.rotation);
-        //gameController.GameOver();'
-        gameObject.SetActive(false);
+        //gameController.GameOver();
+        
+        // TODO: add end logic?
+        //gameObject.SetActive(false);
     }
 
     public void collisionCheck()
