@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Main : MonoBehaviour {
+public class Main : MonoBehaviour
+{
+
     private int TARGET_FRAME_RATE = 90;
     private int m_width = 1000;
 
@@ -13,8 +15,9 @@ public class Main : MonoBehaviour {
         Application.targetFrameRate = TARGET_FRAME_RATE;
     }
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         Debug.Log("test");
 
         m_grid = new bool[m_width, m_width];
@@ -33,9 +36,11 @@ public class Main : MonoBehaviour {
             m_grid[m_width - 1, i] = true;
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }
+
