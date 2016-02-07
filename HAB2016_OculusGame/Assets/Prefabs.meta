@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 280b22ccf8e773c428f790ca091f3b39
 folderAsset: yes
 timeCreated: 1454839493
+=======
+guid: 21ad4b844b768a4409f21717869993b9
+folderAsset: yes
+timeCreated: 1454834487
+>>>>>>> parent of e0d1b99... Removing remaining stray files
 licenseType: Free
 DefaultImporter:
   userData: 
