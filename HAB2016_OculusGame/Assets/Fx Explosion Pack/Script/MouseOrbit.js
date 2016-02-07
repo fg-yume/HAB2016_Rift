@@ -17,10 +17,9 @@ function Start () {
     x = angles.y;
     y = angles.x;
 
-    // Make the rigid body not change rotation
-    // TODO: fix
-   	//if (rigidbody)
-		//rigidbody.freezeRotation = true;
+	// Make the rigid body not change rotation
+   	if (rigidbody)
+		rigidbody.freezeRotation = true;
 }
 
 function LateUpdate () {

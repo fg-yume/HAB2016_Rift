@@ -1,0 +1,113 @@
+Initialize engine version: 5.3.2f1 (e87ab445ead0)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M     (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     1993 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.059 seconds
+Platform assembly: C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\MLH-User\Downloads\HAB2016_Rift-master (2)\HAB2016_Rift-master\HAB2016_OculusGame\Tronoculus_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.646400 ms
+ hello! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+test
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3358 -> priority: 1 
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Turn Function Called
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+AI died! :]
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+You died! :]
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+test
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+

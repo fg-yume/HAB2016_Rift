@@ -10,19 +10,10 @@ public class Movement : MonoBehaviour
     int direction;
     double turnDelay;
     double amtToTurn;
-    ParticleSystem ps;
-    AudioSource explosionSound;
-
-    public enum GameState
-    {
-        Alive,
-        Dead
-    };
 
     private int[] m_lastPos;
     private Vector3 moveDirection = Vector3.zero;
-    public GameObject explosion;
-    public GameState currentState;
+    private GameObject explosion;
     // Use this for initialization
 
     void Start()
@@ -35,53 +26,36 @@ public class Movement : MonoBehaviour
         amtToTurn = 0;
         TURNSPEED = 500;
         //transform.rotation = Quaternion.identity;
-        ps = GetComponent<ParticleSystem>();
-        ps.Pause();
-        explosionSound = GetComponent<AudioSource>();
-        explosionSound.Pause();
-
 
         m_lastPos = new int[] { -1, -1 };
-
-        currentState = GameState.Alive;
     }
 
     // Update is called once per frame
     void Update()
     {
-        switch( currentState )
+
+        turnButton2();
+        //transform.Translate(bikedir * moveSpeed * Time.deltaTime);
+        transform.Translate(new Vector3(-1, 0, 0) * moveSpeed * Time.deltaTime);
+        //Debug.Log(amtToTurn);
+        if (amtToTurn < 0)
         {
-            case GameState.Alive:
-                turnButton2();
-                //transform.Translate(bikedir * moveSpeed * Time.deltaTime);
-                transform.Translate(new Vector3(-1, 0, 0) * moveSpeed * Time.deltaTime);
-                //Debug.Log(amtToTurn);
-                if (amtToTurn < 0)
-                {
-                    double tempturn = TURNSPEED * Time.deltaTime;
-                    tempturn = tempturn > Math.Abs(amtToTurn) ? Math.Abs(amtToTurn) : tempturn;
-                    amtToTurn += tempturn;
-                    transform.Rotate(new Vector3(0, 0, (float)tempturn));
+            double tempturn = TURNSPEED * Time.deltaTime;
+            tempturn = tempturn > Math.Abs(amtToTurn) ? Math.Abs(amtToTurn) : tempturn;
+            amtToTurn += tempturn;
+            transform.Rotate(new Vector3(0, 0, (float)tempturn));
 
-                }
-                else if (amtToTurn > 0)
-                {
-                    double tempturn = -TURNSPEED * Time.deltaTime;
-                    tempturn = Math.Abs(tempturn) > amtToTurn ? -amtToTurn : tempturn;
-                    amtToTurn += tempturn;
-                    transform.Rotate(new Vector3(0, 0, (float)tempturn));
-                }
+        }
+        else if (amtToTurn > 0)
+        {
+            double tempturn = -TURNSPEED * Time.deltaTime;
+            tempturn = Math.Abs(tempturn) > amtToTurn ? -amtToTurn : tempturn;
+            amtToTurn += tempturn;
+            transform.Rotate(new Vector3(0, 0, (float)tempturn));
+        }
 
-                collisionCheck();
-                //transform.position += Vector3.forward * Time.deltaTime;
-
-                break;
-
-            case GameState.Dead:
-                // TODO: game over screen
-
-                break;
-        }     
+        collisionCheck();
+        //transform.position += Vector3.forward * Time.deltaTime;
     }
 
     private void die()
@@ -89,17 +63,8 @@ public class Movement : MonoBehaviour
         Debug.Log("You died! :]");
         Debug.Log("test");
         // TODO: uncomment me! :D
-        //gameObject.SetActive(false);
         //Instantiate(explosion, transform.position, transform.rotation);
-        currentState = GameState.Dead;
-        ps.Play();
-        explosionSound.Play();
-        //ps.emission.rate = 10;
-        //GetComponent<ParticleSystem>().emission.rate = 10;
-        //gameController.GameOver();
-        
-        // TODO: add end logic?
-        //gameObject.SetActive(false);
+        //gameController.GameOver();'
     }
 
     public void collisionCheck()
